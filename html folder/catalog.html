@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans|Sofia">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/jfolder/script.js"></script>
+    <title>Sanzy's kitchen</title>
+  </head>
+  <body>
+      
+    <div class="global">
+      <div class="flex-container">
+        <div class="maybe" style="flex-grow: 0.5"><button type="button" onclick="myMenu()"><i class="material-icons">menu</i></button></div>
+        <div style="flex-grow: 1"><button onclick="document.location='index.html'"><i class="material-icons">home</i></button></div>
+        <div class="conditional" style="flex-grow: 1;"><button onclick="document.location='catalog.html'"><i class="material-icons">store</i></button></div>
+        <div class="conditional" style="flex-grow: 1"><button onclick="document.location='pricelist.html'"><i class='material-icons'>event_note</i></button></div>
+        <div class="conditional" style="flex-grow: 1"><button onclick="document.location='contact.html'"><i class="material-icons">location_on</i></button></div>
+        <div style="flex-grow: 7.5; background-color:#ff8f1c"></div>
+        <div style="flex-grow: 1"><button onclick="document.location='shop2.html'"><i class="material-icons">shopping_basket</i></button></div>
+      </div>
+
+  
+        <div id="magic" class="flex-container-2">
+          <div><button onclick="document.location='catalog.html'">Food catalog</button></div>
+          <div><button onclick="document.location='pricelist.html'">Price list</button></div>
+          <div><button onclick="document.location='contact.html'">Contact us</button></div>
+        </div>
+      </div>
+
+
+      <div class="clearfix">
+
+        <div class="polaroid">
+          <img src="/html folder/pic/jollof-rice.jpg" alt="5 Terre" style="width:100%">
+          
+         <h1 onclick="myjollof()" class="roadmap" style="font-size: 30px;">Jollof rice</h1>
+          <p id="jollof">Jollof rice is the perfect food for those who are looking for something delicious, light, and high in energy. This food is also low in fiber and highly nutritious, making it the ideal choice for those who want to up their nutrition without packing on the pounds. So whether you're looking for a quick and easy meal or just want something light and tasty, Jollof rice is the perfect choice.</p>
+        </div>
+
+        <div class="polaroid">
+          <img src="/html folder/pic/pancakes.jpg" alt="5 Terre" style="width:100%">
+          <div class="design">
+            <h1 onclick="mypancake()" class="roadmap" style="font-size: 30px;">Pancakes</h1>
+            <p id="pancake"> Nothing is more satisfying than a hearty pancake meal in the morning. This high-carbohydrate breakfast can provide enough energy to fuel a day's worth of physical activity.<br><span style="font-weight:bold;"> Did you know? <br></span>Pancakes contain a good amount of iron and potassium which are highly beneficial to your body. Plus, they're very yummy.</p>
+          </div>
+        </div>
+
+        <div class="polaroid">
+          <img src="/html folder/pic/stirfry.jpg" alt="5 Terre" style="width:100%">
+          
+          <h1 onclick="mystirfry()" class="roadmap" style="font-size: 30px;">Stir-fry spag</h1>
+          <p id="stirfry">Our stir fried spaghetti is deeply enriched with all classes of nutrients. With freshly picked vegetables to cholesterol-free oil, you get to eat healthy while still allowed the sensation of unique and great taste. Under section 5 of The Sanzy kitchen's constitution, it's a crime to enjoy this dish without your loved ones. Yes! it's that good. </p>
+        </div>
+
+        <div class="polaroid">
+          <img src="/html folder/pic/porridge.jpg" alt="5 Terre" style="width:100%">
+          
+         <h1 onclick="myporridge()" class="roadmap" style="font-size: 30px;">Porridge</h1>
+         <p id="porridge">Looking for a breakfast or lunch option that's high in energy and fiber? Look no further than Porridge! This preservable product is packed with all six classes of nutrients and has a unique taste that you won't find anywhere else. Plus, it has a beautiful appearance that's sure to brighten up your day. So whether you're looking for a quick and easy breakfast or something to fill you up during the day, Porridge is the perfect choice.</p>
+        </div>
+        
+        <div class="polaroid">
+          <img src="/html folder/pic/moinmoin.jpg" alt="5 Terre" style="width:100%">
+          
+          <h1 onclick="mymoinmoin()" class="roadmap" style="font-size: 30px;">Moinmoin</h1>
+          <p id="moinmoin">Moinmoin is the perfect way to spice up your weekend breakfast routine. This mix of flavors is sure to wake up your taste buds and make your morning meal something to look forward to. Moinmoin is also a great choice if you're looking for a tasty and healthy alternative to store-bought breakfast foods. With its tasty sweetness and hot and spicy kick, it's sure to please even the pickiest of eaters. And with its light and airy texture, Moinmoin is the perfect choice if you're looking for something filling but easy on the go. So why not try something new this weekend? Pick up some Moinmoin and spice up your life!</p>
+        </div>
+        <div class="polaroid">
+          <img src="/html folder/pic/soupbowl.jpg" alt="5 Terre" style="width:100%">
+          
+          <h1 onclick="mysoup()" class="roadmap" style="font-size: 30px;">Soup bowls</h1>
+          <p id="soup">Every day is a party with these soup bowls! Freshly made, hot and just the right amount of spice. These bowls contain a unique mix of flavors that will have you coming back for more. One taste of our soup bowls and you'll be instantly transported to a place of pure bliss. Whether you're craving swallow or you just want to enjoy your rice, these bowls are perfect for you. They're also preservable, so they're perfect if you're usually too busy to cook during the week. So grab a bowl for yourself or give them as a gift and make someone else smile!</p>
+        </div>
+        <div class="polaroid">
+          <img src="/html folder/pic/ofada2.jpg" alt="5 Terre" style="width:100%">
+          
+          <h1 onclick="myofada()" class="roadmap" style="font-size: 30px;">Ofada rice</h1>
+          <p id="ofada">This is one local dish that will leave you wanting more! Ofada rice is a spicy, healthy and nutritious dish that is perfect for any time of the day. It has a distinct taste that is sure to excite your senses, and it is high in calories so it's sure to refill your energy in seconds. So if you're looking for a meal that is both exciting and healthy, try out Ofada rice!</p>
+        </div>
+
+       
+
+        </div>
+
+
+
+      <p style="display:none" id="demo"></p>
+      <p style="display:none" id="demo1"></p>
+      <p style="display:none" id="demo2"></p>
+      <p style="display:none" id="demo3"></p>
+      <p style="display:none" id="demo4"></p>
+      <p style="display:none" id="demo5"></p>
+      <p style="display:none" id="demo6"></p>
+      <p style="display:none" id="demo7"></p>
+
+      <div class="footer" style="font-size:small">
+        <p> Copyright © 2021 | Sanzy's Kitchen</p>
+        <p>Powered by The Website Beast</p>
+       </div>
+  
+  
+  
+  
+  
+   </body>
+  </html>

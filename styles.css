@@ -1,0 +1,510 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Open Sans" , sans-serif;;
+    margin: 0px;
+    padding: 0px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  h1 {font-family:"Merriweather", serif;}
+  h2 {font-family:"Merriweather", serif;}
+  h3 {font-family:"Merriweather", serif;}
+  
+
+  .header {
+    display: flex;
+    background-color: black;
+    color:#ff8f1c;
+    white-space: wrap;
+  }
+  
+  
+  .leftheader {
+    flex:30%;
+    text-align: center;
+    
+  }
+  .center {flex: 40%}
+  .rightheader {flex:30%}
+  .rightheader img {
+    height:150px;
+    width:auto;
+  }
+
+  
+  
+  div.global {
+    position: sticky;
+    top: 0;
+  }
+  
+  .flex-container {
+    display: flex;
+    position: -webkit-sticky;
+    background-color: #f1f1f1;
+    z-index: 2;
+  }
+  
+  .flex-container > div {
+    z-index: +1;
+    background-color: #ff8f1c;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+    border-bottom: 1px solid black;
+  }
+  
+  .flex-container > div:hover {
+    background-color:black;
+  }
+  
+  .flex-container button {
+    color:white;
+    width: 100%;
+  }
+  .flex-container a {
+    color:white;
+    text-decoration: none;
+  }
+  .flex-container-2 button {
+    color:white;
+    border: none;
+    font-size: 20px;
+    background-color: #ff8f1c;
+    text-decoration: none;
+    width: 100%;
+    height: 54px;
+  }
+
+  .flex-container-2  button:hover {
+    background-color:black;
+    color: #ff8f1c
+  }
+  
+  .flex-container button {
+    color:white;
+    border: none;
+    padding: 10px;
+    background-color: transparent;
+  }
+  
+  .flex-container-2 {
+    flex-direction: column;
+    display: none;
+    box-shadow: 3px 3px #b37a41;
+    align-items: stretch;
+    background-color: #f1f1f1;
+    width:100%;
+  }
+  
+  .flex-container-2 > div {
+    background-color: #ff8f1c;
+    color: white;
+    border-bottom: 1px solid black;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+  }
+
+  .clearfix:after {
+    content:"";
+    display: table;
+    clear: both;
+  }
+
+  .clearfix a {color: black}
+  .clearfix button {border: none; background-color: transparent; width: 100%}
+
+  #clearfix {display: none;}
+
+  .flexbox {
+    display: flex;
+  }
+
+  .flairbox {
+    display: flex;
+  }
+
+  .postbox {
+   display: flex;
+  }
+
+  .flirtbox {
+    display: flex;
+    white-space: wrap;
+    color:#ff8f1c;
+    text-align: center;
+  }
+
+  
+  .leftflair {flex: 50%}
+  .rightflair {flex: 50%}
+
+  div.frame img {
+    width: 80%;
+    height: auto;
+  }
+
+  div.postcard1 img {
+    width: 80%;
+    height: auto;
+  }
+  div.postcard2 img {
+    width: 80%;
+    height: auto;
+  }
+  div.postcard3 img {
+    width: 80%;
+    height: auto;
+  }
+  div.postcard4 img {
+    width: 80%;
+    height: auto;
+  }
+
+ img.contact {
+  display: block;
+  height: 300px;
+  width: 95%;
+  margin: auto;
+}
+.socials {text-align: center;}
+
+.socials img {
+  max-height: 100px;
+  width: auto;
+}
+
+  .frame {
+    flex: 45%;
+    color: #ff8f1c;
+    text-align: center;
+    font-size:x-large;
+    margin: 20px;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .postcard1 {
+    flex: 50%;
+    
+  }
+  .postcard2 {
+    flex: 50%;
+  }
+  .postcard3 {
+    flex: 50%;
+  }
+  .postcard4 {
+    flex: 50%;
+  }
+  
+   .space {flex: 10%;}
+   .space2 {flex: 0;}
+
+   
+    .flexbox a {text-decoration: none;
+       color: #ff8f1c;
+       font-weight: bold;
+       background-color: black;
+       padding: 12px 15px;
+       border-radius: 35px;}
+    
+     .flexbox a:hover {
+       color:black;
+       background-color: #ff8f1c;}
+
+    .joker {
+       text-align: center;
+       padding:120px 0px;
+    }
+      #info {
+        width: 50%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+    .joker button {
+      text-decoration: none;
+       width: 50%;
+       color: white;
+       font-size: large;
+       /* font-weight: bold; */
+       background-color: #ff8f1c;
+       padding: 12px 15px;
+       border: none;
+       border-radius: 35px;}
+
+    .solaroid a {
+      text-decoration: none;
+       width: 50%;
+       color: white;
+       font-size: large;
+       background-color: #ff8f1c;
+       padding: 12px 15px;
+       border: none;
+       border-radius: 35px;}
+      
+     .joker button:hover {
+       background-color: black;}
+
+       input[type=submit] {
+       background-color: #ff8f1c;
+       font-size: larger;
+       border: none;
+       border-radius: 35px ;
+       color: white;
+       padding: 12px 32px;
+       text-decoration: none;
+       margin: 4px 2px;
+       cursor: pointer;
+       }
+
+       .polaroid .roadmap {
+        cursor: pointer;
+        animation: dance 1s linear infinite alternate;
+       }
+
+       .roadmap {
+           padding: 10px;
+           text-align: center;
+           background-image: linear-gradient(315deg, #833ab4, #fd1d1d 50%, #ff8f1c);
+           background-clip: text;
+           -webkit-background-clip: text;
+           -webkit-text-fill-color: transparent;
+       }
+        .roadmap a {color:black}
+       .notepad {
+        color:#ff8f1c;
+        background-color: black;
+        border-radius: 10px;
+        height: 675px;
+        width: 90%;
+        margin: auto;
+        white-space: pre-line;
+        }
+
+        ul {
+          font-family: cursive;
+          font-weight: bold;
+          font-size: large;
+          list-style-type:square;}
+           
+          .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            gap: 6px;
+            border-radius: 6px;
+            background-color: black;
+            padding: 6px;
+            width: 90%;
+            margin: auto;
+            font-weight: bold;
+          }
+          
+          .grid-item {
+            box-sizing: border-box;
+            background-color: #ff8f1c;
+            text-align: center;
+          }
+
+          .grid-item p {font-weight: normal;}
+
+          .item1 {
+            grid-column-start: 1;
+            grid-column-end: 4;
+          }
+          
+          .item2 {
+            grid-column-start: 4;
+            grid-column-end: 5;
+          }
+          
+          .item3 {
+            grid-column-start: 1;
+            grid-column-end: 2;
+          }
+
+          .item4 {
+            grid-column-start: 2;
+            grid-column-end: 5;
+          }
+
+          .item5 {
+            grid-column-start: 1;
+            grid-column-end: 5;
+          }
+          table {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+          }
+          
+           td,  th {
+            border: 1px solid #ddd;
+            padding: 8px;
+          }
+
+          .category {
+            font-weight: bold; 
+            color: white;
+            background-color: #ff8f1c;
+            border:none;
+          }
+          
+          .blank {border: none;}
+
+           tr:hover:not(tr.blank) {color: white; background-color: #ff8f1c;}
+          
+           th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #ff8f1c;
+            color: white;
+          }
+
+          .polaroid {
+            float: left;
+            width: 31%;
+            margin: 25px 10px;
+            background-color: white;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            text-align: center;
+          }
+
+          .solaroid {
+            width: 60%;
+            margin: auto;
+            background-color: white;
+            justify-content: center;
+            text-align: center;
+          }
+
+          .shopitem {
+            border: none;
+            border-radius: 15px;
+            float: left;
+            width: 31%;
+            margin: 10px;
+            background-color: #ff8f1c;
+            text-align: center;
+          }
+
+           .shopitem button {
+            cursor: pointer;
+           }
+
+           .shopitem button:hover {
+            color: white
+           }
+
+          .polaroid .roadmap {
+             position: relative;
+             animation: dance 1s linear 0s infinite alternate;
+          }
+
+          .polaroid p {
+            display: none;
+            padding:10px 20px;}
+         
+
+          .footer {
+            text-align: center;
+            font-weight: bold;
+            padding: 10px;
+            margin-top: 50px;
+            background-color: black;
+            color:#ff8f1c;
+            white-space: wrap;
+          }
+          
+
+    @media (max-width:552px) {
+      .header {flex-direction: column;}
+      .rightheader img {
+        display: block;
+        margin: auto;
+        height:150px;
+        width:auto;
+      }
+      .conditional {display: none}
+      .conditional button {font-size: large;}
+      .flexbox {flex-direction: column;}
+      .frame {padding-bottom: 30px;}
+      .flirtbox {flex-direction: column;}
+      .flairbox {flex-direction: column;}
+    .postcard1, .postcard2, .postcard3, .postcard4 {margin: 20px;}
+    }
+    
+    @media (min-width:552px) {
+      .postcard1 {
+        margin-left: 15%
+      }
+      .postcard2 {
+        margin-right: 15%;
+      }
+      .postcard3 {
+        margin-left: 15%;
+        margin-top: 10%;
+      }
+      .postcard4 {
+        margin-right: 15%;
+      }
+    }
+  
+    @media (max-width:842px) {
+      .center, .rightheader {flex: 25%;}
+      .leftheader {flex: 50%;}
+      .rightheader img {
+        display: block;
+        margin: auto;
+        height:150px;
+        width:auto;
+      }
+      .conditional {
+        display: none;
+        font-size: large;}
+
+      .frame2 {flex:45%}
+      .space2 {flex: 10%}
+    }
+
+    @media (min-width:842px) {
+     .maybe {display:none}
+    }
+    
+    @media (max-width: 920px){
+      .polaroid {width: 46%;}
+      .shopitem {width: 46%;}
+      .solaroid {width: 80%}
+      
+
+    }
+
+    @media (max-width: 552px){
+      .polaroid {width: 93%;}
+      .shopitem {width: 93%;}
+      .solaroid {width: 100%}
+      
+    }
+          
+    @keyframes dance {
+      from {left:0px ; top: 0px}
+      to {left:0px ; top: 10px}
+   }

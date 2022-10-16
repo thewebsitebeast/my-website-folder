@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans|Sofia">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/jfolder/script.js"></script>
+    <title>Sanzy's kitchen</title>
+  </head>
+  <body>
+
+    <div class="global">
+      <div class="flex-container">
+        <div class="maybe" style="flex-grow: 0.5"><button type="button" onclick="myMenu()"><i class="material-icons">menu</i></button></div>
+        <div style="flex-grow: 1"><button onclick="document.location='index.html'"><i class="material-icons">home</i></button></div>
+        <div class="conditional" style="flex-grow: 1;"><button onclick="document.location='catalog.html'"><i class="material-icons">store</i></button></div>
+        <div class="conditional" style="flex-grow: 1"><button onclick="document.location='pricelist.html'"><i class='material-icons'>event_note</i></button></div>
+        <div class="conditional" style="flex-grow: 1"><button onclick="document.location='contact.html'"><i class="material-icons">location_on</i></button></div>
+        <div style="flex-grow: 7.5; background-color:#ff8f1c"></div>
+        <div style="flex-grow: 1"><button onclick="document.location='shop2.html'"><i class="material-icons">shopping_basket</i></button></div>
+      </div>
+
+
+      <div id="magic" class="flex-container-2">
+        <div><button onclick="document.location='catalog.html'">Food catalog</button></div>
+        <div><button onclick="document.location='pricelist.html'">Price list</button></div>
+        <div><button onclick="document.location='contact.html'">Contact us</button></div>
+      </div>
+    </div>
+
+   
+    
+
+    
+    <div class="clearfix">
+      <h1 id="greetings" class="roadmap" > Hi, what would you like to have today? </h1>
+      <h5 class="roadmap"> You can check our pricelist <a href="pricelist.html">HERE</a> before you place your order. </h5>
+      <div class="shopitem"><button onclick="myApology()">
+        <h2>Jollof rice</h2>
+        <img src="pic/joll.png" alt="jollof">
+      </button></div>
+
+      <div class="shopitem"><button onclick="document.location='order.html'">
+        <h2>Moinmoin</h2>
+        <img src="pic/moin.png" alt="jollof">
+      </button></div>
+
+      <div class="shopitem"><button onclick="myApology()">
+        <h2>Stir-fry spag</h2>
+        <img src="pic/spag.png" alt="jollof">
+      </button></div>
+
+      <div class="shopitem"><button onclick="myApology()">
+        <h2>Porridge</h2>
+        <img src="pic/porr.png" alt="jollof">
+      </button></div>
+
+      <div class="shopitem"><button onclick="myApology()">
+        <h2>Ofada rice</h2>
+        <img src="pic/ofada.png" alt="jollof">
+      </button></div>
+
+      <div class="shopitem"><button onclick="myApology()">
+        <h2>Pancakes</h2>
+        <img src="pic/pan.png" alt="jollof">
+      </button></div>
+
+      <div class="shopitem"><button onclick="myApology()">
+        <h2>Soup bowl</h2>
+        <img src="pic/sou.png" alt="jollof">
+      </button></div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <p style="display:none" id="demo"></p>
+
+    <div class="footer" style="font-size:small">
+      <p> Copyright © 2021 | Sanzy's Kitchen</p>
+      <p>Powered by The Website Beast</p>
+     </div>
+
+
+ </body>
+</html>

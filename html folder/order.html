@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans|Sofia">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/jfolder/script.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script>
+
+        let text = "Click here to send your order";
+        
+        let link1 = "<a href= 'https://api.whatsapp.com/send?phone=2349059566618&text=%20Hello,%20I%20want%20to%20order%20Plain%20Moinmoin%20and%20Plain%20Tapioca.' >" + text + "</a>"
+        let link2 = "<a href= 'https://api.whatsapp.com/send?phone=2349059566618&text=%20Hello,%20I%20want%20to%20order%20Moinmoin%20with%20fish%20and%20Plain%20Tapioca.' >" + text + "</a>"
+        let link3 = "<a href= 'https://api.whatsapp.com/send?phone=2349059566618&text=Hello,%20I%20want%20to%20order%20Moinmoin%20with%20egg%20and%20Plain%20Tapioca.' >" + text + "</a>"
+        let link4 = "<a href= 'https://api.whatsapp.com/send?phone=2349059566618&text=%20Hello,%20I%20want%20to%20order%20Moinmoin%20with%20fish%20and%20egg%20and%20Plain%20Tapioca.' >" + text + "</a>"
+        let link5 = "<a href= 'https://api.whatsapp.com/send?phone=2349059566618&text=%20Hello,%20I%20want%20to%20order%20Plain%20Moinmoin%20and%20chocolate%20Tapioca.' >" + text + "</a>"
+        let link6 = "<a href= 'https://api.whatsapp.com/send?phone=2349059566618&text=%20%20Hello,%20I%20want%20to%20order%20Moinmoin%20with%20fish%20and%20chocolate%20Tapioca.' >" + text + "</a>"
+        let link7 = "<a href= 'https://api.whatsapp.com/send?phone=2349059566618&text=%20%20Hello,%20I%20want%20to%20order%20Moinmoin%20with%20egg%20and%20chocolate%20Tapioca.' >" + text + "</a>"
+        let link8 = "<a href= 'https://api.whatsapp.com/send?phone=2349059566618&text=%20%20Hello,%20I%20want%20to%20order%20Moinmoin%20with%20fish%20and%20egg%20and%20chocolate%20Tapioca.' >" + text + "</a>"
+        let link9 = "<a href= 'https://api.whatsapp.com/send?phone=2349059566618&text=%20%20Hello,%20I%20want%20to%20order%20Plain%20Moinmoin%20and%20fruity%20Tapioca.' >" + text + "</a>"
+        let link10 = "<a href= 'https://api.whatsapp.com/send?phone=2349059566618&text=%20Hello,%20I%20want%20to%20order%20Moinmoin%20with%20fish%20and%20fruity%20Tapioca.' >" + text + "</a>"
+        let link11 = "<a href= 'https://api.whatsapp.com/send?phone=2349059566618&text=%20Hello,%20I%20want%20to%20order%20Moinmoin%20with%20egg%20and%20fruity%20Tapioca.' >" + text + "</a>"
+        let link12 = "<a href= 'https://api.whatsapp.com/send?phone=2349059566618&text=%20Hello,%20I%20want%20to%20order%20Moinmoin%20with%20fish%20and%20egg%20and%20fruity%20Tapioca.' >" + text + "</a>"
+
+        function validateForm() {
+          event.preventDefault();
+          let x = document.forms["myForm"]["fav_language"].value;
+          let y = document.forms["myForm"]["fav_colour"].value;
+
+          if (x == "pmoin" && y == "ptap") {
+            document.getElementById("link").innerHTML = link1;
+          } else if (x == "fmoin" && y == "ptap") {
+            document.getElementById("link").innerHTML = link2;
+          }
+           else if (x == "emoin" && y == "ptap") {
+            document.getElementById("link").innerHTML = link3;
+          }
+           else if (x == "femoin" && y == "ptap") {
+            document.getElementById("link").innerHTML = link4;
+          
+          } else if (x == "pmoin" && y == "ctap") {
+            document.getElementById("link").innerHTML = link5;
+          }
+           else if (x == "fmoin" && y == "ctap") {
+            document.getElementById("link").innerHTML = link6;
+          }
+           else if (x == "emoin" && y == "ctap") {
+            document.getElementById("link").innerHTML = link7;
+          }
+           else if (x == "femoin" && y == "ctap") {
+            document.getElementById("link").innerHTML = link8;
+          }
+           else if (x == "pmoin" && y == "ftap") {
+            document.getElementById("link").innerHTML = link9;
+          }
+           else if (x == "fmoin" && y == "ftap") {
+            document.getElementById("link").innerHTML = link10;
+          }
+           else if (x == "emoin" && y == "ftap") {
+            document.getElementById("link").innerHTML = link11;
+          }
+           else if (x == "femoin" && y == "ftap") {
+            document.getElementById("link").innerHTML = link12;
+          }
+          else {alert("You have to select one option from each section")}
+        }
+        
+        </script>
+    <title>Sanzy's kitchen</title>
+  </head>
+  <body>
+   
+    <div class="global">
+      <div class="flex-container">
+        <div class="maybe" style="flex-grow: 0.5"><button type="button" onclick="myMenu()"><i class="material-icons">menu</i></button></div>
+        <div style="flex-grow: 1"><button onclick="document.location='index.html'"><i class="material-icons">home</i></button></div>
+        <div class="conditional" style="flex-grow: 1;"><button onclick="document.location='catalog.html'"><i class="material-icons">store</i></button></div>
+        <div class="conditional" style="flex-grow: 1"><button onclick="document.location='pricelist.html'"><i class='material-icons'>event_note</i></button></div>
+        <div class="conditional" style="flex-grow: 1"><button onclick="document.location='contact.html'"><i class="material-icons">location_on</i></button></div>
+        <div style="flex-grow: 7.5; background-color:#ff8f1c"></div>
+        <div style="flex-grow: 1"><button onclick="document.location='shop2.html'"><i class="material-icons">shopping_basket</i></button></div>
+      </div>
+
+      <div id="magic" class="flex-container-2">
+        <div><button onclick="document.location='catalog.html'">Food catalog</button></div>
+        <div><button onclick="document.location='pricelist.html'">Price list</button></div>
+        <div><button onclick="document.location='contact.html'">Contact us</button></div>
+      </div>
+    </div>
+
+
+<div class="solaroid">
+  <img src="/html folder/pic/moinmoin.jpg" style="width:100%">
+  <h1 class="roadmap"> Moinmoin</h1>
+  <form name="myForm" onsubmit="validateForm()">
+
+      <input type="radio" id="pmoin" name="fav_language" value="pmoin">
+      <label for="pmoin">Plain Moinmoin</label><br><hr>
+      <input type="radio" id="fmoin" name="fav_language" value="fmoin">
+      <label for="fmoin">Moinmoin with fish</label><br><hr>
+      <input type="radio" id="emoin" name="fav_language" value="emoin">
+      <label for="emoin">Moinmoin with egg</label><br><hr>
+      <input type="radio" id="femoin" name="fav_language" value="femoin">
+      <label for="femoin">Moinmoin with fish & egg</label>
+      <br><hr>
+  <h1 class="roadmap"> Tapioca</h1>
+
+      
+      <input type="radio" id="ptap" name="fav_colour" value="ptap">
+      <label for="ptap">Plain tapioca</label><br><hr>
+      <input type="radio" id="ctap" name="fav_colour" value="ctap">
+      <label for="ctap">Chocolate tapioca</label><br><hr>
+      <input type="radio" id="ftap" name="fav_colour" value="ftap">
+      <label for="ftap">Fruity tapioca</label>
+      <br><hr>
+      
+      <input type="submit" value="Submit order">
+      <p id="link"></p>
+    </form> 
+  </div>
+<p style="display:none" id="demo"></p>
+
+<div class="footer" style="font-size:small">
+  <p> Copyright © 2021 | Sanzy's Kitchen</p>
+  <p>Powered by The Website Beast</p>
+ </div>
+
+</body>
+</html>
