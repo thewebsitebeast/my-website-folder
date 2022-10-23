@@ -54,9 +54,11 @@ document.getElementById("demo").innerHTML = "The counter is:" + " " + add();
 
 if ((counter % 2) == 1 ) {
 document.getElementById("magic").style.display = "flex";
+document.getElementById("meno").innerHTML = "cancel";
 } 
 else if ((counter % 2) == 0) {
 document.getElementById("magic").style.display = "none";
+document.getElementById("meno").innerHTML = "menu";
 }
 }
 function myjollof() {
